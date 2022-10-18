@@ -1,7 +1,7 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View} from 'react-native';
-import {BlackBuilding, Metro, Road} from './Components';
+import {BackgroundBuildings, BlackBuilding, Metro, Road} from './Components';
 
 export default () => {
   return (
@@ -9,6 +9,7 @@ export default () => {
       <BlackBuilding />
       <Metro />
       <Road />
+      <BackgroundBuildings />
     </View>
   );
 };

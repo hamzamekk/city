@@ -77,6 +77,7 @@ export const BlackBuilding = () => {
             {[...Array(90)].map(item => {
               return (
                 <View
+                  key={item}
                   style={{
                     height: 1,
                     width: '100%',
@@ -97,6 +98,7 @@ export const BlackBuilding = () => {
               {[...Array(8)].map(item => {
                 return (
                   <View
+                    key={item}
                     style={{
                       height: '100%',
                       width: 1,
