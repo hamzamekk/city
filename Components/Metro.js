@@ -9,7 +9,7 @@ const {width} = Dimensions.get('screen');
 
 export const Metro = () => {
   return (
-    <View style={{width, position: 'absolute', bottom: 450}}>
+    <View style={{width, position: 'absolute', bottom: 450, zIndex: 2}}>
       <MetroTrain />
       <Building />
     </View>
