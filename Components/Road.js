@@ -4,8 +4,8 @@ import {Animated, Easing, View} from 'react-native';
 
 export const Road = () => {
   return (
-    <View style={{width: '100%'}}>
-      <View style={{height: 10, backgroundColor: '#6E6E6E'}} />
+    <View style={{width: '100%', position: 'absolute', bottom: 0}}>
+      <View style={{height: 20, backgroundColor: '#6E6E6E'}} />
       <View style={{backgroundColor: '#585758', height: 7}} />
       <View
         style={{
@@ -53,14 +53,14 @@ export const Road = () => {
 };
 
 const Car = ({bg, duration, delay, itemsNumber}) => {
-  const translateX = useRef(new Animated.Value(-1000)).current;
+  const translateX = useRef(new Animated.Value(-1500)).current;
 
   const animate = () => {
     Animated.loop(
       Animated.sequence([
         Animated.timing(translateX, {
           delay,
-          toValue: 1000,
+          toValue: 1500,
           duration,
           useNativeDriver: true,
           easing: Easing.linear,

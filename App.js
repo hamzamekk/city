@@ -1,12 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
 import {View} from 'react-native';
-import {Road} from './Components';
+import {Metro, Road} from './Components';
 
 export default () => {
   return (
-    <View style={{alignItems: 'center', justifyContent: 'center', flex: 1}}>
+    <View style={{flex: 1}}>
       <Road />
+      <Metro />
     </View>
   );
 };
