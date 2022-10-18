@@ -37,6 +37,7 @@ export const BackgroundBuildings = () => {
           <View style={{height: 200, width: 15, backgroundColor: '#7C899D'}} />
         </View>
       </View>
+
       <View
         style={{
           flexDirection: 'row',
@@ -46,6 +47,64 @@ export const BackgroundBuildings = () => {
         }}>
         <View style={{backgroundColor: '#E9E9E8', height: 200, width: 100}} />
         <View style={{backgroundColor: '#AFB2B9', height: 200, width: 20}} />
+      </View>
+      <View
+        style={{
+          height: 300,
+          width: 101,
+          right: 129,
+          bottom: -30,
+          alignItems: 'flex-end',
+        }}>
+        <View
+          style={{
+            height: 10,
+            width: 50,
+            backgroundColor: '#BCBA9C',
+            borderTopLeftRadius: 10,
+          }}
+        />
+        <View
+          style={{
+            height: 50,
+            width: 80,
+            backgroundColor: '#C0BDA2',
+            borderTopLeftRadius: 10,
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}>
+          <View
+            style={{
+              backgroundColor: '#8F8C75',
+              height: 35,
+              width: 60,
+              borderRadius: 10,
+            }}
+          />
+        </View>
+        <View
+          style={{
+            height: 240,
+            width: 180,
+            backgroundColor: '#BDBCA0',
+          }}>
+          <View style={{flexDirection: 'row', paddingVertical: 5}}>
+            {[...Array(30).keys()].map(item => {
+              return (
+                <View
+                  key={item}
+                  style={{
+                    height: 220,
+                    width: 4,
+                    backgroundColor: '#8F8C75',
+                    marginLeft: 5,
+                    borderRadius: 10,
+                  }}
+                />
+              );
+            })}
+          </View>
+        </View>
       </View>
     </View>
   );
